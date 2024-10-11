@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+        <link rel="stylesheet" href="forp3.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="txt">
+                <center>
+                <h3><b> May this Ayudha pooja bring prosperity
+                    and success to all our tools and endeavours.<br>
+                    Happy and Welcome to Pooja, Our honarable <span id="staffName"></span>!
+                </b></h3>
+            </center>
+            </div>
+
+        </div>
+        <script>
+            // Retrieve the selected staff name from localStorage
+            const selectedStaff = localStorage.getItem('selectedStaff');
+            
+            // Display the staff name if it's available
+            if (selectedStaff) {
+              document.getElementById('staffName').textContent = selectedStaff;
+            } else {
+              document.getElementById('staffName').textContent = 'Guest'; // Default text if no name is selected
+            }
+          </script>
+        
+    </body>
+</html>
